@@ -1,0 +1,33 @@
+name: terraform-docs
+
+on:
+  push:
+    branches: ["main", "master"]
+  pull_request:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: terraform-docs
+        uses: terraform-docs/gh-actions@v1.1.0
+        with:
+          working-dir: |
+            .
+            modules/aks
+            modules/node_pool
+            modules/resource_group
+            modules/vnet
+            env/dev
+            env/stage
+            env/qa
+          output-file: README.md
+          output-method: inject
+          git-push: "true"
