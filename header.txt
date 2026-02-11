@@ -1,0 +1,3 @@
+# Azure Cloud environment
+
+This documentation is for the Azure Cloud environment's Terraform configuration.
