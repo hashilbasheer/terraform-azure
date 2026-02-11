@@ -19,15 +19,8 @@ jobs:
       - name: terraform-docs
         uses: terraform-docs/gh-actions@v1.1.0
         with:
-          working-dir: |
-            .
-            modules/aks
-            modules/node_pool
-            modules/resource_group
-            modules/vnet
-            env/dev
-            env/stage
-            env/qa
+          working-dir: .
           output-file: README.md
           output-method: inject
           git-push: "true"
+          config-file: .terraform-docs.yaml
