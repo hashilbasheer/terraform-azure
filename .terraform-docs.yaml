@@ -5,7 +5,7 @@
 formatter: markdown table
 
 # see: https://terraform-docs.io/user-guide/configuration/header-from
-header-from: header.txt
+header-from: README.md
 #header-from: main.tf
 
 # see: https://terraform-docs.io/user-guide/configuration/footer-from
