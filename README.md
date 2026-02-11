@@ -2,27 +2,27 @@
 Terraform script to manage Azure resouces.
 
 <!-- BEGIN_TF_DOCS -->
-## Requirements
+# Azure Cloud environment
 
-No requirements.
+This documentation is for the Azure Cloud environment's Terraform configuration.
 
-## Providers
+#### Providers
 
 No providers.
 
-## Modules
+#### Modules
 
 No modules.
 
-## Resources
+#### Resources
 
 No resources.
 
-## Inputs
+#### Inputs
 
 No inputs.
 
-## Outputs
+#### Outputs
 
 No outputs.
 <!-- END_TF_DOCS -->
